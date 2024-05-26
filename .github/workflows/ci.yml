@@ -25,6 +25,9 @@ jobs:
         pip install pre-commit
         pip install -r backend/requirements.txt
 
+    - name: create logs directory
+      run: mkdir -p backend/logs
+
     - name: run pre-commit hooks
       run: |
         cd backend
